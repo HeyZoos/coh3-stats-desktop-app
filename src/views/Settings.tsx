@@ -15,8 +15,6 @@ import {
   Switch,
   Spoiler,
   Select,
-  Image,
-  Title,
 } from "@mantine/core"
 import { appDataDir } from "@tauri-apps/api/path"
 import { writeText } from "@tauri-apps/api/clipboard"
@@ -238,7 +236,7 @@ export const Settings: React.FC = () => {
             <div>
               {restartRequired ? (
                 <Group>
-                  <Text color="red">
+                  <Text c="red">
                     Restart required to enable / disable streamer overlay
                   </Text>
                   <Button

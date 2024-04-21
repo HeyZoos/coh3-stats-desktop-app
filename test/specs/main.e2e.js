@@ -13,7 +13,7 @@ describe("Game Screen", () => {
     expect(text).toMatch("Game State")
   })
 
-  it("It shows onlyine players in the game", async () => {
+  it("It shows online players in the game", async () => {
     const span = await $('[data-testid="online-players-badge"]')
     const text = await span.getText()
     expect(text !== "0").toEqual(true)
